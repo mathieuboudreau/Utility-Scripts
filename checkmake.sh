@@ -4,7 +4,8 @@
 file=$1
 if [ -w "$file" ]
 then
-	echo "$file found."
+	echo "$file exists."
 else
-	echo "$file not found."
+    > $1
+	echo "$file was created."
 fi
