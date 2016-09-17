@@ -5,8 +5,8 @@
 FILE=$1
 if [ -w "$FILE" ]
 then
-	echo "$FILE exists."
+    echo "$FILE exists."
 else
     > $FILE
-	echo "$FILE was created."
+    echo "$FILE was created."
 fi

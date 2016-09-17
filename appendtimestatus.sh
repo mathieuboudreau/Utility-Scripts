@@ -9,7 +9,7 @@ function checkmake(){
     if ! [ -w "$FILE" ]
     then
         > $FILE
-	    echo "$FILE was created."
+        echo "$FILE was created."
     fi
 }
 
