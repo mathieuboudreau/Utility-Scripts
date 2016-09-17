@@ -1,11 +1,12 @@
 #!/bin/bash
-# Verify if the input file(name) exists and is writable
+# Verify if the input file(name) exists and is writable.
+# If it does not exist, create it.
 
-file=$1
-if [ -w "$file" ]
+FILE=$1
+if [ -w "$FILE" ]
 then
-	echo "$file exists."
+	echo "$FILE exists."
 else
-    > $1
-	echo "$file was created."
+    > $FILE
+	echo "$FILE was created."
 fi
