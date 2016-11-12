@@ -7,6 +7,11 @@
 # arg2: Source folder of script
 # arg3: script filename
 
-source activate $1
-cd $2
-python $3
+# --args--
+VENV=$1
+PYPACKAGEPATH=$2
+PYSCRIPT=$3
+
+source activate $VENV
+cd $PYPACKAGEPATH
+python $PYSCRIPT
